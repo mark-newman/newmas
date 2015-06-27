@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>{{ seasonData.caption }}</h2>
+    {% if fixtures.fixtures | length %}
+        <h4>Fixtures: {{ fixtures.fixtures.0.date | date('d/m/Y') }}</h4>
+    {% endif %}
+    <ul>
+        {% for fixture in fixtures.fixtures %}
+            <li>
+                {{ fixture.homeTeamName }} {{ fixture.result.goalsHomeTeam }} - {{ fixture.result.goalsAwayTeam }} {{ fixture.awayTeamName }}
+                <ul>
+                    {% for pastFixture in fixture.historicData.head2head.fixtures %}
+                        <li>
+                            {{ pastFixture.date | date('d/m/Y') }} : {{ pastFixture.homeTeamName }} {{ pastFixture.result.goalsHomeTeam }} - {{ pastFixture.result.goalsAwayTeam }} {{ pastFixture.awayTeamName }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

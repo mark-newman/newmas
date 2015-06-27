@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>{{ seasonData.caption }}</h2>
+    <p>Season match days</p>
+    <ul>
+        {% for matchdayId, matchdayDate in matchdays %}
+            <li><a href="{{ path('matchday_data', { 'matchdayId' : matchdayId, 'seasonId' : seasonData.id }) }}">{{ matchdayDate | date('d/m/Y') }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
