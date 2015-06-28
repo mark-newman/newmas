@@ -5,12 +5,12 @@
     {% if fixtures.fixtures | length %}
         <h4>Fixtures: {{ fixtures.fixtures.0.date | date('d/m/Y') }}</h4>
     {% endif %}
-    <ul>
+    <ul class="list-group">
         {% for fixture in fixtures.fixtures %}
-            <li>
+            <li class="list-group-item">
                 {{ fixture.homeTeamName }} {{ fixture.result.goalsHomeTeam }} - {{ fixture.result.goalsAwayTeam }} {{ fixture.awayTeamName }}
                 <ul>
-                    {% for pastFixture in fixture.historicData.head2head.fixtures %}
+                    {% for pastFixture in fixture.historicData.head2head.fixtures  %}
                         <li>
                             {{ pastFixture.date | date('d/m/Y') }} : {{ pastFixture.homeTeamName }} {{ pastFixture.result.goalsHomeTeam }} - {{ pastFixture.result.goalsAwayTeam }} {{ pastFixture.awayTeamName }}
                         </li>

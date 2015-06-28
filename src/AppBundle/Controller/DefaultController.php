@@ -21,7 +21,7 @@ class DefaultController extends Controller
                 array('choices' => array(
                     'PL'   => 'Premier League',
                     'CL' => 'Champions League',
-                    'PD'   => 'Premier Division',
+                    'PD'   => 'La Liga',
                     'BL1'   => 'Bundesliga',
                 )))
             ->add('submit', 'submit', array('label' => 'Submit'))
@@ -32,7 +32,9 @@ class DefaultController extends Controller
             $form->bind($request);
             $data = $form->getData();
             $seasonData = $this->getSeasonData($data['league'], "2014");
-            return $this->redirect($this->generateUrl('last_fixtures_data', array('seasonId' => $seasonData['id'])));
+//            return $this->redirect($this->generateUrl('last_fixtures_data', array('seasonId' => $seasonData['id'])));
+            return $this->redirect($this->generateUrl('matchday_list', array('seasonId' => $seasonData['id'])));
+
         }
 
         return $this->render('default/index.html.twig', array(
@@ -51,7 +53,7 @@ class DefaultController extends Controller
         $matchdays = $this->getMatchdays($fixtures);
         return $this->render('default/matchdayList.html.twig', array(
             'seasonData' => $seasonData,
-            'matchdays' => $matchdays
+            'matchdays' => array_reverse($matchdays, true),
         ));
     }
 
@@ -138,7 +140,9 @@ class DefaultController extends Controller
         $matchdays = array();
         foreach ($fixtures['fixtures'] as $fixture)
         {
-            $matchdays[$fixture['matchday']] = $fixture['date'];
+            if(!in_array($fixture['matchday'], array_keys($matchdays))){
+                $matchdays[$fixture['matchday']] = $fixture['date'];
+            }
         }
         return $matchdays;
     }
