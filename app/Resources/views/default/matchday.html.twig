@@ -9,7 +9,7 @@
         {% for currentFixture in fixtures.fixtures %}
             <li class="list-group-item">
                 <a target="_blank" href="{{ path('team_data', { 'teamId' : currentFixture.homeTeamId }) }}">{{ currentFixture.homeTeamName }}</a> {{ currentFixture.result.goalsHomeTeam }} - {{ currentFixture.result.goalsAwayTeam }} <a target="_blank" href="{{ path('team_data', { 'teamId' : currentFixture.awayTeamId }) }}">{{ currentFixture.awayTeamName }}</a>
-                {% set fixture = currentFixture.historicData.head2head %}
+                {% set fixtures = currentFixture.historicData.head2head %}
                 {% include 'default/partials/resultsTable.html.twig' %}
             </li>
         {% endfor %}
