@@ -1,0 +1,44 @@
+<table class="table">
+    <thead>
+    <tr>
+        <td>Date</td>
+        <td>Home</td>
+        <td>Score</td>
+        <td>Away</td>
+        {% if team is defined %}
+            <td>Result</td>
+        {% endif %}
+    </tr>
+    </thead>
+    <tbody>
+    {% for fixture in fixtures.fixtures %}
+        <tr>
+            <td>{{ fixture.date | date('d/m/Y') }}</td>
+            <td>{{ fixture.homeTeamName }}</td>
+            <td><span style="width=20%; text-align: center">{{ fixture.result.goalsHomeTeam }} - {{ fixture.result.goalsAwayTeam }}</span></td>
+            <td>{{ fixture.awayTeamName }}</td>
+            {% if team is defined %}
+                <td>
+                    {% if team.name == fixture.homeTeamName %}
+                        {% if fixture.result.goalsHomeTeam > fixture.result.goalsAwayTeam %}
+                            W
+                        {% elseif fixture.result.goalsHomeTeam == fixture.result.goalsAwayTeam %}
+                            D
+                        {% else %}
+                            L
+                        {% endif %}
+                    {% else %}
+                        {% if fixture.result.goalsHomeTeam > fixture.result.goalsAwayTeam %}
+                            L
+                        {% elseif fixture.result.goalsHomeTeam == fixture.result.goalsAwayTeam %}
+                            D
+                        {% else %}
+                            W
+                        {% endif %}
+                    {% endif %}
+                </td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

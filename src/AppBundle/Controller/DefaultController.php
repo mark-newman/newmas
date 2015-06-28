@@ -70,6 +70,11 @@ class DefaultController extends Controller
         foreach ($fixtures['fixtures'] as &$fixture)
         {
             $fixture['historicData'] = $this->getHistoricDataForFixture($fixture);
+
+            preg_match('#(\d+)$#', $fixture['_links']['homeTeam']['href'], $matches);
+            $fixture['homeTeamId'] = $matches[1];
+            preg_match('#(\d+)$#', $fixture['_links']['awayTeam']['href'], $matches);
+            $fixture['awayTeamId'] = $matches[1];
         }
 
         return $this->render('default/matchday.html.twig', array(
@@ -104,6 +109,22 @@ class DefaultController extends Controller
             'fixtures' => $fixtures
         ));
 
+    }
+
+    /**
+     * @Route("/team/{teamId}", name="team_data")
+     * @param $teamId
+     */
+    public function getTeamData($teamId)
+    {
+        $uri = $this->baseUri.'alpha/teams/'.$teamId;
+        $team = $this->sendRequest($uri);
+        $fixtures = $this->sendRequest($team['_links']['fixtures']['href']);
+        $fixtures['fixtures'] = array_reverse($fixtures['fixtures'], true);
+        return $this->render('default/team.html.twig', array(
+            'team' => $team,
+            'fixtures' =>  $fixtures,
+        ));
     }
 
     public function getSeasonDataById($seasonId)

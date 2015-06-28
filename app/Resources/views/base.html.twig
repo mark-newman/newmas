@@ -6,6 +6,11 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen">
+        {% stylesheets
+            '../app/Resources/public/main.css'
+            output='css/compiled/main.css' %}
+            <link href="{{ asset_url }}" rel="stylesheet" type="text/css">
+        {% endstylesheets%}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <!-- HTML5 Shim and Respond.js add IE8 support of HTML5 elements and media queries -->
         {% include 'BraincraftedBootstrapBundle::ie8-support.html.twig' %}
