@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2>{{ seasonData.caption }}</h2>
+    {% if fixtures.fixtures | length %}
+        <h4>Fixtures: {{ fixtures.fixtures.0.date | date('d/m/Y') }}</h4>
+    {% endif %}
+    <table class="table">
+        {% for currentFixture in fixtures.fixtures %}
+            <tr>
+                <td>
+                    <a target="_blank" href="{{ path('team_data', { 'teamId' : currentFixture.homeTeamId }) }}">{{ currentFixture.homeTeamName }}</a> {{ currentFixture.result.goalsHomeTeam }} - {{ currentFixture.result.goalsAwayTeam }} <a target="_blank" href="{{ path('team_data', { 'teamId' : currentFixture.awayTeamId }) }}">{{ currentFixture.awayTeamName }}</a>
+                    {% set fixtures = currentFixture.historicData.head2head %}
+                </td>
+                <td>
+                    <a class="show-results" href="#">
+                        Show Past Results
+                    </a>
+                </td>
+            </tr>
+            <tr style="display: none;">
+                <td colspan="3">
+                    {% include 'old-api/partials/resultsTable.html.twig' %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a.show-results').click(function(){
+                $(this).parent().parent().next().toggle();
+            });
+        });
+    </script>
+{% endblock %}

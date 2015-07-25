@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="form-group">
+        <div id="league_choice_wrapper">
+            <select class="form-control" name="league_choices" id="league_choices">
+                <option value="">Please select a league</option>
+                {% for league in league_choices %}
+                    <option value="{{ league }}">{{ league | season }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div id="season_choice_wrapper">
+            <select class="form-control" name="seasons_list" id="seasons_list">
+            </select>
+        </div>
+        <div id="matchday_choice_wrapper">
+            <select class="form-control" name="matchday_list" id="matchday_list">
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <input id="go_search_baby" class="btn btn-primary" type="button" value="Go"/>
+    </div>
+
+    <div id="fixtures_container">
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#go_search_baby').hide();
+            $('#league_choices').on('change', function (){
+                $.ajax({
+                    url: '{{ path('ajax_season_list') }}',
+                    data: {league_code: $(this).val()},
+                    type: 'POST',
+                    beforeSend: function () {
+                        $('#vrnAjaxSpinner').removeClass("dead");
+                        $('#go_search_baby').hide();
+                    }
+                }).done(function (data) {
+                    $('#season_choice_wrapper select').html(data);
+                    $('#matchday_choice_wrapper select').html("<option value=''>Please select a matchday</option>");
+                });
+            });
+            $('#seasons_list').on('change', function (){
+                var league_code = $('#league_choices').val();
+                $.ajax({
+                    url: '{{ path('ajax_matchday_list') }}',
+                    data: {league_code: league_code, season: $(this).val()},
+                    type: 'POST',
+                    beforeSend: function () {
+                        $('#vrnAjaxSpinner').removeClass("dead");
+                        $('#go_search_baby').hide();
+                    }
+                }).done(function (data) {
+                    $('#matchday_choice_wrapper select').html(data);
+                });
+            });
+            $('#matchday_list').on('change', function (){
+                $('#go_search_baby').show();
+            });
+            $('#go_search_baby').on('click', function (){
+                var league_code = $('#league_choices').val();
+                var matchday = $('#matchday_list').val();
+
+                $.ajax({
+                    url: '{{ path('ajax_fixtures_list') }}',
+                    data: {league_code: league_code, matchday: matchday},
+                    type: 'POST',
+                    beforeSend: function () {
+                        $('#vrnAjaxSpinner').removeClass("dead");
+                    }
+                }).done(function (data) {
+                    $('#fixtures_container').html(data);
+                });
+            });
+        });
+    </script>
+{% endblock %}

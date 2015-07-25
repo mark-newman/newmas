@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h2 class="left">{{ team.name }}</h2>
+    {% include 'match/partials/resultsTable.html.twig' %}
+{% endblock %}

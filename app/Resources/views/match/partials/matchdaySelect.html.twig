@@ -1,0 +1,4 @@
+<option value="">Please select a match day</option>
+{% for matchday in matchdays %}
+    <option value="{{ matchday.matchDate | date('Y-m-d') }}">{{ matchday.matchDate | date('d-m-Y') }}</option>
+{% endfor %}
