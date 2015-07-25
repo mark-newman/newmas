@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8656e7ef-f15b-4451-81fb-6ff4e529567e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" afterPath="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/match/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/match/index.html.twig" />
     </list>
     <ignored path="newmas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppExtension.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AppExtension.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="10" selection-start="2779" selection-end="2779" vertical-scroll-proportion="0.7768052" vertical-offset="1226" max-vertical-offset="1870">
+            <state line="91" column="10" selection-start="2428" selection-end="2428" vertical-scroll-proportion="-12.346154" vertical-offset="1226" max-vertical-offset="1870">
               <folding>
                 <element signature="e#1760#1778#1" expanded="true" />
                 <element signature="e#1902#1920#1" expanded="true" />
@@ -170,14 +169,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="67" selection-start="386" selection-end="386" vertical-scroll-proportion="13.730769" vertical-offset="493" max-vertical-offset="1530">
+            <state line="22" column="37" selection-start="862" selection-end="862" vertical-scroll-proportion="0.48358864" vertical-offset="153" max-vertical-offset="1513">
               <folding>
-                <element signature="e#1262#1278#0" expanded="true" />
-                <element signature="e#2004#2022#0" expanded="true" />
-                <element signature="e#2833#2851#0" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="e#1244#1260#0" expanded="true" />
+                <element signature="e#1986#2004#0" expanded="true" />
+                <element signature="e#2815#2833#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,7 +234,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/match/partials/seasonsSelect.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/old-api/matchday.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Twig/MatchExtension.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/match/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/OldApiMatchController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/team.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/TeamRepository.php" />
@@ -247,6 +246,7 @@
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/match/index.html.twig" />
       </list>
     </option>
   </component>
@@ -984,17 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="67" selection-start="386" selection-end="386" vertical-scroll-proportion="13.730769" vertical-offset="493" max-vertical-offset="1530">
-          <folding>
-            <element signature="e#1262#1278#0" expanded="true" />
-            <element signature="e#2004#2022#0" expanded="true" />
-            <element signature="e#2833#2851#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/matchdaySelect.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="12" selection-start="207" selection-end="207" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
@@ -1072,10 +1061,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="10" selection-start="2779" selection-end="2779" vertical-scroll-proportion="0.7768052" vertical-offset="1226" max-vertical-offset="1870">
+        <state line="91" column="10" selection-start="2428" selection-end="2428" vertical-scroll-proportion="-12.346154" vertical-offset="1226" max-vertical-offset="1870">
           <folding>
             <element signature="e#1760#1778#1" expanded="true" />
             <element signature="e#1902#1920#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="37" selection-start="862" selection-end="862" vertical-scroll-proportion="0.48358864" vertical-offset="153" max-vertical-offset="1513">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#1244#1260#0" expanded="true" />
+            <element signature="e#1986#2004#0" expanded="true" />
+            <element signature="e#2815#2833#0" expanded="true" />
           </folding>
         </state>
       </provider>
