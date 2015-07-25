@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8656e7ef-f15b-4451-81fb-6ff4e529567e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/old-api/matchday.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/matchday.html.twig" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/old-api/index.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/default/matchdayList.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/old-api/matchdayList.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/default/partials/resultsTable.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/old-api/partials/resultsTable.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/default/team.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/old-api/team.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/OldApiMatchController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/cache/.gitkeep" afterPath="$PROJECT_DIR$/app/cache/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/logs/.gitkeep" afterPath="$PROJECT_DIR$/app/logs/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" afterPath="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="newmas.iws" />
@@ -38,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ImportController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImportController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="9" selection-start="965" selection-end="1331" vertical-scroll-proportion="0.7439825" vertical-offset="238" max-vertical-offset="2023">
+            <state line="35" column="22" selection-start="1170" selection-end="1170" vertical-scroll-proportion="-9.807693" vertical-offset="238" max-vertical-offset="2023">
               <folding />
             </state>
           </provider>
@@ -113,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppExtension.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AppExtension.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="-28.115385" vertical-offset="0" max-vertical-offset="1870">
+            <state line="93" column="10" selection-start="2779" selection-end="2779" vertical-scroll-proportion="0.7768052" vertical-offset="1226" max-vertical-offset="1870">
               <folding>
                 <element signature="e#1760#1778#1" expanded="true" />
                 <element signature="e#1902#1920#1" expanded="true" />
@@ -158,7 +146,7 @@
       <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="10" selection-start="431" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+            <state line="13" column="20" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -256,9 +244,9 @@
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
       </list>
     </option>
   </component>
@@ -1061,16 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1030" selection-end="1030" vertical-scroll-proportion="-28.115385" vertical-offset="0" max-vertical-offset="1870">
-          <folding>
-            <element signature="e#1760#1778#1" expanded="true" />
-            <element signature="e#1902#1920#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="25" selection-start="833" selection-end="833" vertical-scroll-proportion="0.66873705" vertical-offset="0" max-vertical-offset="483">
@@ -1078,17 +1056,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="431" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+        <state line="35" column="22" selection-start="1170" selection-end="1170" vertical-scroll-proportion="-9.807693" vertical-offset="238" max-vertical-offset="2023">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="9" selection-start="965" selection-end="1331" vertical-scroll-proportion="0.7439825" vertical-offset="238" max-vertical-offset="2023">
+        <state line="13" column="20" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="10" selection-start="2779" selection-end="2779" vertical-scroll-proportion="0.7768052" vertical-offset="1226" max-vertical-offset="1870">
+          <folding>
+            <element signature="e#1760#1778#1" expanded="true" />
+            <element signature="e#1902#1920#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

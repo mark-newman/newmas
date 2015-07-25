@@ -89,7 +89,7 @@ class AppExtension extends \Twig_Extension
         }
 
         return array(
-            'score' => ($home_scored * $away_scored * $home_scored_recent * $away_scored_recent),
+            'score' => $home_scored/$k_factor * $away_scored/$k_factor * $home_scored_recent/$k_factor * $away_scored_recent/$k_factor,
             'score_breakdown' => 'Same Fixture Home Scored: '.$home_scored.'&#13;Same Fixture Away Scored: '.$away_scored.'&#13;Home Form Scored: '.$home_scored_recent.'&#13;Away Form Scored: '.$away_scored_recent,
         );
     }
