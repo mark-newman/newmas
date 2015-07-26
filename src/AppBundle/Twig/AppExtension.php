@@ -49,21 +49,16 @@ class AppExtension extends \Twig_Extension
     public function goalsGaloreAlgorithmFunction($home_team_id, $away_team_id, $historical_fixtures, $matchday)
     {
         $k_factor = count($historical_fixtures);
+        $response_array = array();
 
         if($k_factor < 5){
+            $response_array['error'] = 'Only '.count($historical_fixtures).' previous meetings';
             if($k_factor == 0){
-                return array(
-                    'error' => 'No previous meetings'
-                );
+                $response_array['error'] = 'No previous meetings';
             }
             if($k_factor == 1){
-                return array(
-                    'error' => 'Only '.count($historical_fixtures).' previous meeting'
-                );
+                $response_array['error'] = 'Only '.count($historical_fixtures).' previous meeting';
             }
-            return array(
-                'error' => 'Only '.count($historical_fixtures).' previous meetings'
-            );
         }
 
         $home_scored = 0;
@@ -98,10 +93,14 @@ class AppExtension extends \Twig_Extension
             }
         }
 
-        return array(
-            'score' => $home_scored/$k_factor * $away_scored/$k_factor * $home_scored_recent/$k_factor * $away_scored_recent/$k_factor,
-            'score_breakdown' => 'Number of fixtures counted:'.$k_factor.'&#13;Same Fixture Home Scored: '.$home_scored.'&#13;Same Fixture Away Scored: '.$away_scored.'&#13;Home Form Scored: '.$home_scored_recent.'&#13;Away Form Scored: '.$away_scored_recent,
-        );
+        if($k_factor == 0){
+            $response_array['score'] = 0;
+        }else{
+            $response_array['score'] = $home_scored/$k_factor * $away_scored/$k_factor * $home_scored_recent/$k_factor * $away_scored_recent/$k_factor;
+        }
+        $response_array['score_breakdown'] = 'Number of fixtures counted:'.$k_factor.'&#13;Same Fixture Home Scored: '.$home_scored.'&#13;Same Fixture Away Scored: '.$away_scored.'&#13;Home Form Scored: '.$home_scored_recent.'&#13;Away Form Scored: '.$away_scored_recent;
+
+        return $response_array;
     }
 
 

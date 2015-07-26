@@ -12,6 +12,9 @@
                 {% endif %}
                 <th>Fixture</th>
                 <th style="text-align: center;">Algorithm Score</th>
+                {% if upcoming is defined %}
+                    <th style="text-align: center;">Prediction?</th>
+                {% endif %}
                 {% if upcoming is not defined %}
                     <th style="text-align: center;">GG Success?</th>
                     <th style="text-align: center;">Algorithm Success?</th>
@@ -30,12 +33,20 @@
                     </td>
                     <td style="text-align: center;">
                         {% set alg = gg_alg(fixture.fixture.hometeam.id, fixture.fixture.awayteam.id, fixture.history, first_fixture.fixture.matchDate) %}
+                        <span title="{{ alg.score_breakdown | raw }}">{{ alg.score |number_format(2, '.', ',') }}</span>
                         {% if alg.error is defined %}
-                            {{ alg.error }}
-                        {% else %}
-                            <span title="{{ alg.score_breakdown | raw }}">{{ alg.score |number_format(2, '.', ',') }}</span>
+                            <span title="{{ alg.error }}" style="color: blue;" class="glyphicon glyphicon-info-sign"></span>
                         {% endif %}
                     </td>
+                    {% if upcoming is defined %}
+                        <td style="text-align: center;">
+                                {% if alg.score | number_format(2, '.', ',') >= algorithm_success_value %}
+                                    <span style="color: green;" class="glyphicon glyphicon-ok"></span>
+                                {% else %}
+                                    <span style="color: red;" class="glyphicon glyphicon-remove"></span>
+                                {% endif %}
+                        </td>
+                    {% endif %}
                     {% if upcoming is not defined %}
                         <td style="text-align: center;">
                             {% if fixture.fixture.homeScore is null %}
@@ -51,17 +62,17 @@
                             {% endif %}
                         </td>
                         <td style="text-align: center;">
-                            {% if alg.error is defined or alg.score < 0.5 or gg is not defined %}
+                            {% if alg.error is defined or alg.score | number_format(2, '.', ',') < algorithm_success_value or gg is not defined %}
                                 N/A
                             {% else %}
-                                {% if alg.error is not defined and alg.score >= 0.5 and gg %}
+                                {% if alg.error is not defined and alg.score | number_format(2, '.', ',') >= algorithm_success_value and gg %}
                                     <span style="color: green;" class="glyphicon glyphicon-ok"></span>
                                 {% else %}
                                     <span style="color: red;" class="glyphicon glyphicon-remove"></span>
                                 {% endif %}
                             {% endif %}
-                        </td>
                     {% endif %}
+                        </td>
                     <td style="text-align: center;">
                         <a class="show-results" href="#">
                             Show Past Results

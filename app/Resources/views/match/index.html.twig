@@ -28,7 +28,14 @@
         <input style="display: none;" id="go_search_baby" class="btn btn-primary" type="button" value="Go"/>
     </div>
 
+    <div class="form-group">
+        <label for="algorithm_updated_value">Update algorithm success value</label>
+        <input id="algorithm_updated_value" name="algorithm_updated_value" type="text" value="{{ algorithm_success_value }}"/>
+        <input id="update_algorithm_success" class="btn btn-primary" type="button" value="Update"/>
+    </div>
+
     <div id="fixtures_container">
+        <p>Update </p>
         {% for fixture_data in league_fixtures %}
             {% include 'match/partials/resultsList.html.twig' %}
         {% endfor %}
@@ -40,6 +47,7 @@
     {{ parent() }}
     <script type="text/javascript">
         $(document).ready(function(){
+            var searched = false;
             $('#league_choices').on('change', function (){
                 $.ajax({
                     url: '{{ path('ajax_season_list') }}',
@@ -87,6 +95,26 @@
                 }).done(function (data) {
                     $('#ajaxSpinner').hide();
                     $('#fixtures_container').html(data);
+                    searched = true;
+                });
+            });
+            $('#update_algorithm_success').on('click', function (){
+                var algorithm_updated_value = $('#algorithm_updated_value').val();
+
+                $.ajax({
+                    url: '{{ path('update_algorithm_success_value') }}',
+                    data: {algorithm_updated_value: algorithm_updated_value},
+                    type: 'POST',
+                    beforeSend: function () {
+                        $('#ajaxSpinner').show();
+                    }
+                }).done(function (data) {
+                    $('#ajaxSpinner').hide();
+                    if(searched){
+                        $('#go_search_baby').trigger('click');
+                    }else{
+                        location.reload();
+                    }
                 });
             });
         });

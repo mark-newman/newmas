@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class MatchController extends Controller
 {
@@ -19,6 +20,14 @@ class MatchController extends Controller
             'E2',
             'E3',
         );
+
+        if($this->get('session')->has('algorithm_success_value')){
+            $algorithm_success_value = $this->get('session')->get('algorithm_success_value');
+        }else{
+            $algorithm_success_value = 0.35;
+            $this->get('session')->set('algorithm_success_value', $algorithm_success_value);
+        }
+
 
         $em = $this->getDoctrine()->getManager();
         $league_fixtures = array();
@@ -39,7 +48,7 @@ class MatchController extends Controller
 
         $upcoming = true;
 
-        return $this->render('match/index.html.twig', compact('league_choices', 'league_fixtures', 'upcoming'));
+        return $this->render('match/index.html.twig', compact('league_choices', 'league_fixtures', 'upcoming', 'algorithm_success_value'));
     }
 
     /**
@@ -65,6 +74,21 @@ class MatchController extends Controller
             $em = $this->getDoctrine()->getManager();
             $seasons = $em->getRepository('AppBundle:Result')->findUniqueSeasonsByLeagueCode($league_code);
             return $this->render('match/partials/seasonsSelect.html.twig', compact('seasons'));
+        }
+    }
+
+    /**
+     * @Route("/ajax/update-algorithm-success", name="update_algorithm_success_value")
+     */
+    public function ajaxUpdateAlgorithmSuccessAction(Request $request)
+    {
+        if($request->isXmlHttpRequest()){
+            $algorithm_updated_value = $request->get('algorithm_updated_value');
+            if(is_numeric($algorithm_updated_value)){
+                $this->get('session')->set('algorithm_success_value', $algorithm_updated_value);
+            }
+
+            return new Response('success');
         }
     }
 
@@ -100,8 +124,8 @@ class MatchController extends Controller
                 $fixture_data[$fixture->getId()]['fixture'] = $fixture;
                 $fixture_data[$fixture->getId()]['history'] = $em->getRepository('AppBundle:Result')->findHistoricalFixturesHomeTeamAndAwayTeam($fixture->getHomeTeam()->getId(), $fixture->getAwayTeam()->getId(), $matchday);;
             }
-
-            return $this->render('match/partials/resultsList.html.twig', compact('fixture_data'));
+            $algorithm_success_value = $this->get('session')->get('algorithm_success_value');
+            return $this->render('match/partials/resultsList.html.twig', compact('fixture_data', 'algorithm_success_value'));
         }
     }
 }
