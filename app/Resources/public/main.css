@@ -7,3 +7,9 @@
 #crest {
     height: 110px;
 }
+.ajaxSpinner {
+    background-image: url('/images/ajaxSpinner.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100px;
+}

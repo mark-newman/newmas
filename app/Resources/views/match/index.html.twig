@@ -4,7 +4,7 @@
     <div class="form-group">
         <div id="league_choice_wrapper">
             <p>The home page has a snapshot of the upcoming fixtures for each of the English leagues with the exact fixture history available by clicking the "Show Past Results" button. You can click on a team to open up their current league form in a new tab. The GG algorithm currently factors in these past fixtures and current form, but can easily be tweaked or other variations can be added.</p>
-            <p>Use the dropdowns below to view previous match day results so you can review and refine the algorithm (don't forget to hit 'Go'). The algorithm currently only takes into account up to the last 10 exact fixtures (where available), then mirrors this number when reviewing form. If there are less than five previous results it is discounted. The algorithm column on the historic pages shows 'N/A' if the score is less than 0.5 (implying no prediction), a tick if the score is above 0.5 and both teams score, otherwise it shows a cross to represent a failed prediction.</p>
+            <p>Use the dropdowns below to view previous match day results so you can review and refine the algorithm (don't forget to hit 'Go'). The algorithm currently only takes into account up to the last 10 exact fixtures (where available), then mirrors this number when reviewing form. If there are less than five previous results it is discounted. The algorithm column on the historic pages shows 'N/A' if the score is less than 0.5 (implying no prediction), a tick if the score is above 0.5 and both teams score, otherwise it shows a cross to represent a failed prediction. To check the algorithm you can hover on the score and the title attribute will popup showing the numbers.</p>
             <select class="form-control" name="league_choices" id="league_choices">
                 <option value="">Please select a league</option>
                 {% for league in league_choices %}
@@ -19,6 +19,9 @@
         <div id="matchday_choice_wrapper">
             <select class="form-control" name="matchday_list" id="matchday_list">
             </select>
+        </div>
+        <div id="ajaxSpinner" style="display: none;">
+            <div class="ajaxSpinner"></div>
         </div>
     </div>
     <div class="form-group">
@@ -43,10 +46,11 @@
                     data: {league_code: $(this).val()},
                     type: 'POST',
                     beforeSend: function () {
-                        $('#vrnAjaxSpinner').removeClass("dead");
+                        $('#ajaxSpinner').show();
                         $('#go_search_baby').hide();
                     }
                 }).done(function (data) {
+                    $('#ajaxSpinner').hide();
                     $('#season_choice_wrapper select').html(data);
                     $('#matchday_choice_wrapper select').html("<option value=''>Please select a match day</option>");
                 });
@@ -58,10 +62,11 @@
                     data: {league_code: league_code, season: $(this).val()},
                     type: 'POST',
                     beforeSend: function () {
-                        $('#vrnAjaxSpinner').removeClass("dead");
+                        $('#ajaxSpinner').show();
                         $('#go_search_baby').hide();
                     }
                 }).done(function (data) {
+                    $('#ajaxSpinner').hide();
                     $('#matchday_choice_wrapper select').html(data);
                 });
             });
@@ -77,9 +82,10 @@
                     data: {league_code: league_code, matchday: matchday},
                     type: 'POST',
                     beforeSend: function () {
-                        $('#vrnAjaxSpinner').removeClass("dead");
+                        $('#ajaxSpinner').show();
                     }
                 }).done(function (data) {
+                    $('#ajaxSpinner').hide();
                     $('#fixtures_container').html(data);
                 });
             });
