@@ -20,7 +20,26 @@ class MatchController extends Controller
             'E3',
         );
 
-        return $this->render('match/index.html.twig', compact('league_choices'));
+        $em = $this->getDoctrine()->getManager();
+        $league_fixtures = array();
+        foreach($league_choices as $league){
+
+            $fixtures = $em->getRepository('AppBundle:Result')->getUpcomingFixtures($league);
+
+            $fixture_data = array();
+
+            foreach ($fixtures as $fixture)
+            {
+                $fixture_data[$fixture->getId()]['fixture'] = $fixture;
+                $fixture_data[$fixture->getId()]['history'] = $em->getRepository('AppBundle:Result')->findHistoricalFixturesHomeTeamAndAwayTeam($fixture->getHomeTeam()->getId(), $fixture->getAwayTeam()->getId(), $fixture->getMatchDate());;
+            }
+            $league_fixtures[$league] = $fixture_data;
+
+        }
+
+        $upcoming = true;
+
+        return $this->render('match/index.html.twig', compact('league_choices', 'league_fixtures', 'upcoming'));
     }
 
     /**

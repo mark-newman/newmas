@@ -29,6 +29,24 @@ class ResultRepository extends EntityRepository
 
     }
 
+    public function getUpcomingFixtures($league_code){
+
+        $query = $this->createQueryBuilder('r')
+            ->where('r.league_code = :league_code')
+            ->andWhere('r.matchDate > :from_date')
+            ->andWhere('r.matchDate < :to_date')
+            ->setParameter('league_code', $league_code)
+            ->setParameter('from_date', date("Y-m-d"))
+            ->setParameter('to_date', date("Y-m-d",strtotime("+4 week")))
+            ->orderBy('r.league_code', 'DESC')
+            ->addOrderBy('r.matchDate', 'ASC')
+            ->distinct()
+            ->getQuery();
+
+        return $query->getResult();
+
+    }
+
     public function findUniqueSeasonsByLeagueCode($league_code){
 
         $query = $this->createQueryBuilder('r')
@@ -57,17 +75,22 @@ class ResultRepository extends EntityRepository
 
     }
 
-    public function findHistoricalFixturesHomeTeamAndAwayTeam($home_team, $away_team, $matchday){
+    public function findHistoricalFixturesHomeTeamAndAwayTeam($home_team, $away_team, $matchday=false, $limit=10){
 
         $query = $this->createQueryBuilder('r')
         ->where('r.hometeam = :home_team')
         ->andWhere('r.awayteam = :away_team')
-        ->andWhere('r.matchDate < :matchday')
         ->setParameter('home_team', $home_team)
-        ->setParameter('away_team', $away_team)
-        ->setParameter('matchday', $matchday)
-        ->orderBy('r.matchDate', 'DESC')
-        ->getQuery();
+        ->setParameter('away_team', $away_team);
+        if($matchday){
+            $query = $query
+                ->andWhere('r.matchDate < :matchday')
+                ->setParameter('matchday', $matchday);
+        }
+        $query = $query
+            ->orderBy('r.matchDate', 'DESC')
+            ->setMaxResults($limit)
+            ->getQuery();
 
         return $query->getResult();
 

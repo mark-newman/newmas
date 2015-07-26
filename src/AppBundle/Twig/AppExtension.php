@@ -50,11 +50,21 @@ class AppExtension extends \Twig_Extension
     {
         $k_factor = count($historical_fixtures);
 
-//        if($k_factor < 5){
-//            return array(
-//                'error' => 'Only '.count($historical_fixtures).' previous meetings'
-//            );
-//        }
+        if($k_factor < 5){
+            if($k_factor == 0){
+                return array(
+                    'error' => 'No previous meetings'
+                );
+            }
+            if($k_factor == 1){
+                return array(
+                    'error' => 'Only '.count($historical_fixtures).' previous meeting'
+                );
+            }
+            return array(
+                'error' => 'Only '.count($historical_fixtures).' previous meetings'
+            );
+        }
 
         $home_scored = 0;
         $away_scored = 0;
