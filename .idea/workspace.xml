@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8656e7ef-f15b-4451-81fb-6ff4e529567e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" afterPath="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/match/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/match/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/public/main.css" afterPath="$PROJECT_DIR$/app/Resources/public/main.css" />
     </list>
     <ignored path="newmas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AlgorithmStatsController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AlgorithmStatsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="196" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.41067284" vertical-offset="962" max-vertical-offset="1530">
+            <state line="27" column="10" selection-start="598" selection-end="598" vertical-scroll-proportion="-4.3846154" vertical-offset="146" max-vertical-offset="1530">
               <folding>
                 <element signature="e#122#181#0" expanded="true" />
                 <element signature="e#746#779#0" expanded="true" />
@@ -163,15 +160,9 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="-11.115385" vertical-offset="51" max-vertical-offset="2414">
+            <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="-12.096154" vertical-offset="0" max-vertical-offset="2414">
               <folding>
-                <element signature="e#12#26#0" expanded="false" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="e#2611#2647#0" expanded="false" />
-                <element signature="e#2971#2987#0" expanded="false" />
-                <element signature="e#3744#3762#0" expanded="false" />
-                <element signature="e#4603#4621#0" expanded="false" />
-                <element signature="e#5285#5315#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -180,17 +171,20 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/public/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="1" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="340">
+            <state line="19" column="20" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="matchdaySelect.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/matchdaySelect.html.twig">
+      <file leaf-file-name="base.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="12" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
-              <folding />
+            <state line="21" column="32" selection-start="989" selection-end="989" vertical-scroll-proportion="0.65106386" vertical-offset="51" max-vertical-offset="646">
+              <folding>
+                <element signature="e#910#918#0" expanded="true" />
+                <element signature="e#1006#1027#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -225,7 +219,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/default/matchdayList.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/public/css/main.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/team.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/partials/resultsTable.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -244,7 +237,6 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/partials/resultsTable.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" />
-        <option value="$PROJECT_DIR$/app/Resources/public/main.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/TestAlgorithmController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php" />
@@ -256,6 +248,8 @@
         <option value="$PROJECT_DIR$/app/Resources/views/algorithm-stats/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/public/main.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -572,6 +566,28 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newmas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newmas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -819,12 +835,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/old-api/team.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="204" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="14" selection-start="1001" selection-end="1001" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="612" />
+        <state line="5" column="16" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="204">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
@@ -868,13 +881,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Response.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="20" selection-start="7596" selection-end="7596" vertical-scroll-proportion="0.0" vertical-offset="3366" max-vertical-offset="21777">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/public/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
       </provider>
@@ -924,21 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="12" selection-start="2376" selection-end="2420" vertical-scroll-proportion="-4.576923" vertical-offset="1054" max-vertical-offset="2278">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="-11.115385" vertical-offset="51" max-vertical-offset="2414">
-          <folding>
-            <element signature="e#12#26#0" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="e#2611#2647#0" expanded="false" />
-            <element signature="e#2971#2987#0" expanded="false" />
-            <element signature="e#3744#3762#0" expanded="false" />
-            <element signature="e#4603#4621#0" expanded="false" />
-            <element signature="e#5285#5315#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,11 +1006,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="196" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.41067284" vertical-offset="962" max-vertical-offset="1530">
+        <state line="27" column="10" selection-start="598" selection-end="598" vertical-scroll-proportion="-4.3846154" vertical-offset="146" max-vertical-offset="1530">
           <folding>
             <element signature="e#122#181#0" expanded="true" />
             <element signature="e#746#779#0" expanded="true" />
             <element signature="e#2981#3034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="-12.096154" vertical-offset="0" max-vertical-offset="2414">
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/public/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="20" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="32" selection-start="989" selection-end="989" vertical-scroll-proportion="0.65106386" vertical-offset="51" max-vertical-offset="646">
+          <folding>
+            <element signature="e#910#918#0" expanded="true" />
+            <element signature="e#1006#1027#0" expanded="true" />
           </folding>
         </state>
       </provider>

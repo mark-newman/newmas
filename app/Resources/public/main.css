@@ -4,6 +4,9 @@
 .right{
     float: right;
 }
+.cb {
+    clear: both;
+}
 #crest {
     height: 110px;
 }
@@ -12,4 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100px;
+}
+.tm20 {
+    margin-top: 20px;
 }

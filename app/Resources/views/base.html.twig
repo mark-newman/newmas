@@ -18,7 +18,9 @@
 
     <body>
         <div class="container">
-            <h1><a href="{{ path('homepage') }}">Newma's Football Stats</a></h1>
+            <h1 class="left"><a href="{{ path('homepage') }}">Newma's Football Stats</a></h1>
+            <a class="right tm20" href="{{ path('algorithm_stats_index') }}">Algorithm statistics</a>
+            <div class="cb"></div>
             {% block body %}{% endblock %}
         </div>
 
