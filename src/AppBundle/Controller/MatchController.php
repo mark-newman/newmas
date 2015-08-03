@@ -122,7 +122,7 @@ class MatchController extends Controller
             foreach ($fixtures as $fixture)
             {
                 $fixture_data[$fixture->getId()]['fixture'] = $fixture;
-                $fixture_data[$fixture->getId()]['history'] = $em->getRepository('AppBundle:Result')->findHistoricalFixturesHomeTeamAndAwayTeam($fixture->getHomeTeam()->getId(), $fixture->getAwayTeam()->getId(), $matchday);;
+                $fixture_data[$fixture->getId()]['history'] = $em->getRepository('AppBundle:Result')->findHistoricalFixturesHomeTeamAndAwayTeam($fixture->getHomeTeam()->getId(), $fixture->getAwayTeam()->getId(), $matchday);
             }
             $algorithm_success_value = $this->get('session')->get('algorithm_success_value');
             return $this->render('match/partials/resultsList.html.twig', compact('fixture_data', 'algorithm_success_value'));

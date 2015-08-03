@@ -8,6 +8,12 @@ services:
         class: AppBundle\Twig\AppExtension
         arguments:
             em: "@doctrine.orm.entity_manager"
+            algorithm_service: "@algorithm_service"
         public: false
         tags:
             - { name: twig.extension }
+
+    algorithm_service:
+        class:        AppBundle\Service\AlgorithmService
+        arguments:
+            em: "@doctrine.orm.entity_manager"

@@ -2,12 +2,16 @@
 
 namespace AppBundle\Twig;
 
+use AppBundle\Service\AlgorithmService;
+
 class AppExtension extends \Twig_Extension
 {
     private $em;
+    private $algorithm_service;
 
-    public function __construct(\Doctrine\ORM\EntityManager $em){
+    public function __construct(\Doctrine\ORM\EntityManager $em, AlgorithmService $algorithm_service){
         $this->em = $em;
+        $this->algorithm_service = $algorithm_service;
     }
 
     public function getFunctions()
@@ -48,59 +52,7 @@ class AppExtension extends \Twig_Extension
 
     public function goalsGaloreAlgorithmFunction($home_team_id, $away_team_id, $historical_fixtures, $matchday)
     {
-        $k_factor = count($historical_fixtures);
-        $response_array = array();
-
-        if($k_factor < 5){
-            $response_array['error'] = 'Only '.count($historical_fixtures).' previous meetings';
-            if($k_factor == 0){
-                $response_array['error'] = 'No previous meetings';
-            }
-            if($k_factor == 1){
-                $response_array['error'] = 'Only '.count($historical_fixtures).' previous meeting';
-            }
-        }
-
-        $home_scored = 0;
-        $away_scored = 0;
-        foreach($historical_fixtures as $fixture){
-            if($fixture->getHomeScore()>0){
-                $home_scored++;
-            }
-            if($fixture->getAwayScore()>0){
-                $away_scored++;
-            }
-        }
-
-        $home_team_recent = $this->em->getRepository('AppBundle:Result')->getRecentResults($home_team_id, $k_factor, true, false, $matchday);
-        $away_team_recent = $this->em->getRepository('AppBundle:Result')->getRecentResults($away_team_id, $k_factor, false, true, $matchday);
-
-        $home_scored_recent = 0;
-        $away_scored_recent = 0;
-
-
-        foreach ($home_team_recent as $fixture)
-        {
-            if($fixture->getHomeScore() > 0){
-                $home_scored_recent++;
-            }
-        }
-
-        foreach ($away_team_recent as $fixture)
-        {
-            if($fixture->getAwayScore() > 0){
-                $away_scored_recent++;
-            }
-        }
-
-        if($k_factor == 0){
-            $response_array['score'] = 0;
-        }else{
-            $response_array['score'] = $home_scored/$k_factor * $away_scored/$k_factor * $home_scored_recent/$k_factor * $away_scored_recent/$k_factor;
-        }
-        $response_array['score_breakdown'] = 'Number of fixtures counted:'.$k_factor.'&#13;Same Fixture Home Scored: '.$home_scored.'&#13;Same Fixture Away Scored: '.$away_scored.'&#13;Home Form Scored: '.$home_scored_recent.'&#13;Away Form Scored: '.$away_scored_recent;
-
-        return $response_array;
+        return $this->algorithm_service->goalsGaloreAlgorithmFunction($home_team_id, $away_team_id, $historical_fixtures, $matchday);
     }
 
 

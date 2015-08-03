@@ -1,0 +1,30 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>League</th>
+            <th>Season</th>
+            <th style="text-align: center;">Algorithm Success Score</th>
+            <th style="text-align: center;">Total games</th>
+            <th style="text-align: center;">Total predictions</th>
+            <th style="text-align: center;">Correct predictions</th>
+            <th style="text-align: center;">Success percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ league | season }}</td>
+            <td>{{ season }}</td>
+            <td style="text-align: center;">{{ algorithm_success_score }}</td>
+            <td style="text-align: center;">{{ matches | length }}</td>
+            <td style="text-align: center;">{{ prediction_count }}</td>
+            <td style="text-align: center;">{{ correct }}</td>
+            <td style="text-align: center;">
+                {% if correct == 0 %}
+                    0%
+                {% else %}
+                    {{ ((correct/prediction_count)*100) | number_format(2) }}
+                {% endif %}
+            </td>
+        </tr>
+    </tbody>
+</table>

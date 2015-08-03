@@ -1,0 +1,95 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="form-group">
+        <div id="algorithm_choice_wrapper">
+            <select class="form-control" name="algorithm_list" id="algorithm_list">
+                <option value="">Choose an algorithm</option>
+                {% for algorithm in algorithm_choices %}
+                    <option value="{{ algorithm }}">{{ algorithm }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div id="league_choice_wrapper">
+            <select class="form-control" name="league_choices" id="league_choices">
+                <option value="">Choose a league</option>
+                {% for league in league_choices %}
+                    <option value="{{ league }}">{{ league | season }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div id="season_choice_wrapper">
+            <select class="form-control" name="seasons_list" id="seasons_list">
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="algorithm_success_value">Algorithm success value</label>
+        <input id="algorithm_success_value" name="algorithm_success_value" type="text" value=""/>
+    </div>
+    <div class="form-group">
+        <label for="minimum_history">Minimum history for prediction (number of games)</label>
+        <input id="minimum_history" name="minimum_history" type="text" value=""/>
+    </div>
+    <div class="form-group">
+        <label for="include_x_league_form">Include X number of league form games (use 0 to match the number of previous repeat fixtures)</label>
+        <input id="include_x_league_form" name="include_x_league_form" type="text" value=""/>
+    </div>
+    <div class="form-group">
+        <label for="minimum_league_form">Minimum number of league form games (used if 0 in the previous field)</label>
+        <input id="minimum_league_form" name="minimum_league_form" type="text" value=""/>
+    </div>
+    <div id="ajaxSpinner" style="display: none;">
+        <div class="ajaxSpinner"></div>
+    </div>
+    <div class="form-group">
+        <input id="get_the_numbers" class="btn btn-primary" type="button" value="Go"/>
+    </div>
+
+    <div id="results_container"></div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var searched = false;
+            $('#league_choices').on('change', function (){
+                $.ajax({
+                    url: '{{ path('ajax_season_list') }}',
+                    data: {league_code: $(this).val()},
+                    type: 'POST',
+                    beforeSend: function () {
+                        $('#ajaxSpinner').show();
+                        $('#go_search_baby').hide();
+                    }
+                }).done(function (data) {
+                    $('#ajaxSpinner').hide();
+                    $('#season_choice_wrapper select').html(data);
+                });
+            });
+            $('#get_the_numbers').on('click', function (){
+                var algorithm = $('#algorithm_list').val();
+                var league_code = $('#league_choices').val();
+                var season = $('#seasons_list').val();
+                var algorithm_success_value = $('#algorithm_success_value').val();
+                var minimum_history = $('#minimum_history').val();
+                var include_x_league_form = $('#include_x_league_form').val();
+                var minimum_league_form = $('#minimum_league_form').val();
+
+                $.ajax({
+                    url: '{{ path('get_individual_algorithm_stats') }}',
+                    data: {league_code: league_code, season: season, algorithm: algorithm, algorithm_success_value: algorithm_success_value, minimum_history: minimum_history, include_x_league_form: include_x_league_form, minimum_league_form: minimum_league_form},
+                    type: 'POST',
+                    beforeSend: function () {
+                        $('#ajaxSpinner').show();
+                    }
+                }).done(function (data) {
+                    $('#ajaxSpinner').hide();
+                    $('#results_container').html(data);
+                });
+            });
+
+        });
+    </script>
+{% endblock %}
