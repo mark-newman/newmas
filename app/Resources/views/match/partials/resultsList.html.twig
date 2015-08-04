@@ -37,14 +37,14 @@
                         {% else %}
                             {% set alg = fixture.alg %}
                         {% endif %}
-                        <span title="{{ alg.score_breakdown | raw }}">{{ alg.score |number_format(2, '.', ',') }}</span>
+                        <span title="{{ alg.score_breakdown | raw }}">{{ alg.score |number_format(3, '.', ',') }}</span>
                         {% if alg.error is defined %}
                             <span title="{{ alg.error }}" style="color: blue;" class="glyphicon glyphicon-info-sign"></span>
                         {% endif %}
                     </td>
                     {% if upcoming is defined %}
                         <td style="text-align: center;">
-                                {% if alg.score | number_format(2, '.', ',') >= algorithm_success_value %}
+                                {% if alg.score >= algorithm_success_value %}
                                     <span style="color: green;" class="glyphicon glyphicon-ok"></span>
                                 {% else %}
                                     <span style="color: red;" class="glyphicon glyphicon-remove"></span>
@@ -66,10 +66,10 @@
                             {% endif %}
                         </td>
                         <td style="text-align: center;">
-                            {% if alg.error is defined or alg.score | number_format(2, '.', ',') < algorithm_success_value or gg is not defined %}
+                            {% if alg.error is defined or alg.score < algorithm_success_value or gg is not defined %}
                                 N/A
                             {% else %}
-                                {% if alg.error is not defined and alg.score | number_format(2, '.', ',') >= algorithm_success_value and gg %}
+                                {% if alg.error is not defined and alg.score >= algorithm_success_value and gg %}
                                     <span style="color: green;" class="glyphicon glyphicon-ok"></span>
                                 {% else %}
                                     <span style="color: red;" class="glyphicon glyphicon-remove"></span>
