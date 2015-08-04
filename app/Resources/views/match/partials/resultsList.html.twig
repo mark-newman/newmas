@@ -32,7 +32,11 @@
                         <a target="_blank" href="{{ path('team', { 'team_id' : fixture.fixture.hometeam.id }) }}">{{ fixture.fixture.hometeam.name }}</a> {{ fixture.fixture.homeScore is not null ? fixture.fixture.homeScore : '' }} - {{ fixture.fixture.awayScore is not null ? fixture.fixture.awayScore : '' }} <a target="_blank" href="{{ path('team', { 'team_id' : fixture.fixture.awayteam.id }) }}">{{ fixture.fixture.awayteam.name }}</a>
                     </td>
                     <td style="text-align: center;">
-                        {% set alg = gg_alg(fixture.fixture.hometeam.id, fixture.fixture.awayteam.id, fixture.history, fixture.fixture.matchDate) %}
+                        {% if fixture.alg is not defined %}
+                            {% set alg = gg_alg(fixture.fixture.hometeam.id, fixture.fixture.awayteam.id, fixture.history, fixture.fixture.matchDate) %}
+                        {% else %}
+                            {% set alg = fixture.alg %}
+                        {% endif %}
                         <span title="{{ alg.score_breakdown | raw }}">{{ alg.score |number_format(2, '.', ',') }}</span>
                         {% if alg.error is defined %}
                             <span title="{{ alg.error }}" style="color: blue;" class="glyphicon glyphicon-info-sign"></span>
@@ -63,7 +67,7 @@
                         </td>
                         <td style="text-align: center;">
                             {% if alg.error is defined or alg.score | number_format(2, '.', ',') < algorithm_success_value or gg is not defined %}
-                                {{ alg.score }}
+                                N/A
                             {% else %}
                                 {% if alg.error is not defined and alg.score | number_format(2, '.', ',') >= algorithm_success_value and gg %}
                                     <span style="color: green;" class="glyphicon glyphicon-ok"></span>

@@ -77,10 +77,12 @@ class AlgorithmStatsController extends Controller {
                 $prediction_count++;
                 $correct++;
                 $fixture_data[$match->getId()]['fixture'] = $match;
+                $fixture_data[$match->getId()]['alg'] = $algorithm_data;
                 $fixture_data[$match->getId()]['history'] = $historical_fixtures;
             }else{
                 $prediction_count++;
                 $incorrect++;
+                $fixture_data[$match->getId()]['alg'] = $algorithm_data;
                 $fixture_data[$match->getId()]['fixture'] = $match;
                 $fixture_data[$match->getId()]['history'] = $historical_fixtures;
             }
