@@ -14,7 +14,7 @@
         <tr>
             <td>{{ league | season }}</td>
             <td>{{ season }}</td>
-            <td style="text-align: center;">{{ algorithm_success_score }}</td>
+            <td style="text-align: center;">{{ algorithm_success_value }}</td>
             <td style="text-align: center;">{{ matches | length }}</td>
             <td style="text-align: center;">{{ prediction_count }}</td>
             <td style="text-align: center;">{{ correct }}</td>
@@ -28,3 +28,5 @@
         </tr>
     </tbody>
 </table>
+{% set algorithm_stats = true %}
+{% include 'match/partials/resultsList.html.twig' %}

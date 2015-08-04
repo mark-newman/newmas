@@ -1,13 +1,13 @@
 {% if fixture_data | length %}
     {% set first_fixture = fixture_data | first %}
     <h2>{{ first_fixture.fixture.leagueCode | season }}</h2>
-    {% if upcoming is not defined %}
+    {% if upcoming is not defined and algorithm_stats is not defined %}
         <h4>Match Day: {{ first_fixture.fixture.matchDate | date('d-m-Y') }}</h4>
     {% endif %}
     <table class="table">
         <thead>
             <tr>
-                {% if upcoming is defined %}
+                {% if upcoming is defined or algorithm_stats is defined %}
                     <th>Date</th>
                 {% endif %}
                 <th>Fixture</th>
@@ -25,14 +25,14 @@
         <tbody>
             {% for fixture in fixture_data %}
                 <tr>
-                    {% if upcoming is defined %}
+                    {% if upcoming is defined or algorithm_stats is defined %}
                         <td>{{ fixture.fixture.matchDate | date('d-m-Y') }}</td>
                     {% endif %}
                     <td>
                         <a target="_blank" href="{{ path('team', { 'team_id' : fixture.fixture.hometeam.id }) }}">{{ fixture.fixture.hometeam.name }}</a> {{ fixture.fixture.homeScore is not null ? fixture.fixture.homeScore : '' }} - {{ fixture.fixture.awayScore is not null ? fixture.fixture.awayScore : '' }} <a target="_blank" href="{{ path('team', { 'team_id' : fixture.fixture.awayteam.id }) }}">{{ fixture.fixture.awayteam.name }}</a>
                     </td>
                     <td style="text-align: center;">
-                        {% set alg = gg_alg(fixture.fixture.hometeam.id, fixture.fixture.awayteam.id, fixture.history, first_fixture.fixture.matchDate) %}
+                        {% set alg = gg_alg(fixture.fixture.hometeam.id, fixture.fixture.awayteam.id, fixture.history, fixture.fixture.matchDate) %}
                         <span title="{{ alg.score_breakdown | raw }}">{{ alg.score |number_format(2, '.', ',') }}</span>
                         {% if alg.error is defined %}
                             <span title="{{ alg.error }}" style="color: blue;" class="glyphicon glyphicon-info-sign"></span>
@@ -63,7 +63,7 @@
                         </td>
                         <td style="text-align: center;">
                             {% if alg.error is defined or alg.score | number_format(2, '.', ',') < algorithm_success_value or gg is not defined %}
-                                N/A
+                                {{ alg.score }}
                             {% else %}
                                 {% if alg.error is not defined and alg.score | number_format(2, '.', ',') >= algorithm_success_value and gg %}
                                     <span style="color: green;" class="glyphicon glyphicon-ok"></span>

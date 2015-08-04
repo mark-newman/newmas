@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8656e7ef-f15b-4451-81fb-6ff4e529567e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/public/main.css" afterPath="$PROJECT_DIR$/app/Resources/public/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="newmas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,12 +31,17 @@
       <file leaf-file-name="AlgorithmStatsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="10" selection-start="598" selection-end="598" vertical-scroll-proportion="-4.3846154" vertical-offset="146" max-vertical-offset="1530">
-              <folding>
-                <element signature="e#122#181#0" expanded="true" />
-                <element signature="e#746#779#0" expanded="true" />
-                <element signature="e#2981#3034#0" expanded="true" />
-              </folding>
+            <state line="69" column="34" selection-start="2176" selection-end="2176" vertical-scroll-proportion="-3.7692308" vertical-offset="841" max-vertical-offset="1530">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Team.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Team.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="-19.5" vertical-offset="207" max-vertical-offset="2516">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,27 +49,18 @@
       <file leaf-file-name="Request.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="746" column="20" selection-start="22830" selection-end="22830" vertical-scroll-proportion="-6.1923075" vertical-offset="12402" max-vertical-offset="33796">
+            <state line="746" column="20" selection-start="22830" selection-end="22830" vertical-scroll-proportion="0.0" vertical-offset="12682" max-vertical-offset="33915">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="algorithmResults.html.twig" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="algorithmResults.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="42" selection-start="535" selection-end="535" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="595">
+            <state line="11" column="12" selection-start="467" selection-end="467" vertical-scroll-proportion="0.38163266" vertical-offset="0" max-vertical-offset="629">
               <folding>
-                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="e#1194#1230#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,10 +69,8 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/algorithm-stats/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="261" selection-start="3906" selection-end="3906" vertical-scroll-proportion="-11.038462" vertical-offset="1090" max-vertical-offset="1717">
-              <folding>
-                <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
-              </folding>
+            <state line="81" column="261" selection-start="3906" selection-end="3906" vertical-scroll-proportion="-14.423077" vertical-offset="1002" max-vertical-offset="1717">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,20 +78,7 @@
       <file leaf-file-name="AlgorithmService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="35" selection-start="816" selection-end="816" vertical-scroll-proportion="-6.019231" vertical-offset="214" max-vertical-offset="1513">
-              <folding>
-                <element signature="e#6#86#0" expanded="true" />
-                <element signature="e#1537#1555#1" expanded="true" />
-                <element signature="e#1692#1710#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Result.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Result.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="7" selection-start="913" selection-end="913" vertical-scroll-proportion="-12.423077" vertical-offset="544" max-vertical-offset="4131">
+            <state line="31" column="35" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="214" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
@@ -104,13 +87,20 @@
       <file leaf-file-name="resultsList.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="37" selection-start="583" selection-end="583" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1870">
+            <state line="25" column="32" selection-start="1118" selection-end="1118" vertical-scroll-proportion="14.538462" vertical-offset="1181" max-vertical-offset="1870">
               <folding>
-                <element signature="e#1333#1337#0" expanded="false" />
-                <element signature="e#1619#1623#0" expanded="false" />
-                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="e#4890#4927#0" expanded="false" />
+                <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="e#4991#5028#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resultsTable.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsTable.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="27" selection-start="1352" selection-end="1352" vertical-scroll-proportion="-21.576923" vertical-offset="0" max-vertical-offset="748">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,23 +108,8 @@
       <file leaf-file-name="AppExtension.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="62" selection-start="1417" selection-end="1417" vertical-scroll-proportion="-21.961538" vertical-offset="347" max-vertical-offset="1207">
+            <state line="54" column="62" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1207">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="21" selection-start="434" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-              <folding>
-                <marker date="1438626020000" expanded="true" signature="159:575" placeholder="services:" />
-                <marker date="1438626020000" expanded="true" signature="244:353" placeholder="arguments:" />
-                <marker date="1438626020000" expanded="true" signature="384:429" placeholder="tags:" />
-                <marker date="1438626020000" expanded="true" signature="434:575" placeholder="algorithm_service:" />
-                <marker date="1438626020000" expanded="true" signature="518:575" placeholder="arguments:" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -142,7 +117,7 @@
       <file leaf-file-name="MatchController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="12" selection-start="2376" selection-end="2420" vertical-scroll-proportion="-4.576923" vertical-offset="1054" max-vertical-offset="2278">
+            <state line="60" column="17" selection-start="1974" selection-end="1982" vertical-scroll-proportion="-7.019231" vertical-offset="604" max-vertical-offset="2278">
               <folding />
             </state>
           </provider>
@@ -151,7 +126,7 @@
       <file leaf-file-name="ResultRepository.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="20" selection-start="2882" selection-end="2882" vertical-scroll-proportion="-5.8461537" vertical-offset="1514" max-vertical-offset="2312">
+            <state line="98" column="20" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.0" vertical-offset="1514" max-vertical-offset="2312">
               <folding />
             </state>
           </provider>
@@ -160,10 +135,8 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="-12.096154" vertical-offset="0" max-vertical-offset="2414">
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="-9.153846" vertical-offset="391" max-vertical-offset="2414">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,14 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="32" selection-start="989" selection-end="989" vertical-scroll-proportion="0.65106386" vertical-offset="51" max-vertical-offset="646">
-              <folding>
-                <element signature="e#910#918#0" expanded="true" />
-                <element signature="e#1006#1027#0" expanded="true" />
-              </folding>
+            <state line="11" column="51" selection-start="503" selection-end="503" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="646">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,7 +162,7 @@
       <file leaf-file-name="seasonsSelect.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/seasonsSelect.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="10" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
+            <state line="3" column="10" selection-start="156" selection-end="156" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
               <folding />
             </state>
           </provider>
@@ -237,19 +207,19 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/partials/resultsTable.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/TestAlgorithmController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/algorithmService.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/algorithm-stats/index.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php" />
         <option value="$PROJECT_DIR$/app/Resources/public/main.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig" />
       </list>
     </option>
   </component>
@@ -285,6 +255,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -375,7 +346,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Service" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -609,7 +580,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -663,25 +633,25 @@
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27109975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27109975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28898427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2932761" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -818,11 +788,6 @@
         <state line="12" column="0" selection-start="311" selection-end="311" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="2822" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Team.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="-6.423077" vertical-offset="547" max-vertical-offset="2516" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/match/team.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="40" selection-start="131" selection-end="131" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="187" />
@@ -859,23 +824,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="49" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsTable.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="12" selection-start="1201" selection-end="1201" vertical-scroll-proportion="0.0" vertical-offset="245" max-vertical-offset="748">
-          <folding />
-        </state>
+        <state line="23" column="49" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2125" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/old-api/partials/resultsTable.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="833">
-          <folding />
-        </state>
+        <state line="14" column="12" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="833" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Response.php">
@@ -887,140 +841,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/matchdaySelect.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="12" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/seasonsSelect.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
-          <folding />
-        </state>
+        <state line="3" column="12" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="7" selection-start="913" selection-end="913" vertical-scroll-proportion="-12.423077" vertical-offset="544" max-vertical-offset="4131">
+        <state line="51" column="7" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="4131">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="95" selection-end="102" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1513">
-          <folding />
-        </state>
+        <state line="3" column="25" selection-start="95" selection-end="102" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1513" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="21" selection-start="434" selection-end="451" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <folding>
-            <marker date="1438626020000" expanded="true" signature="159:575" placeholder="services:" />
-            <marker date="1438626020000" expanded="true" signature="244:353" placeholder="arguments:" />
-            <marker date="1438626020000" expanded="true" signature="384:429" placeholder="tags:" />
-            <marker date="1438626020000" expanded="true" signature="434:575" placeholder="algorithm_service:" />
-            <marker date="1438626020000" expanded="true" signature="518:575" placeholder="arguments:" />
+            <marker date="1438626020000" expanded="true" signature="-1:-1" placeholder="services:" />
+            <marker date="1438626020000" expanded="true" signature="-1:-1" placeholder="arguments:" />
+            <marker date="1438626020000" expanded="true" signature="-1:-1" placeholder="tags:" />
+            <marker date="1438626020000" expanded="true" signature="-1:-1" placeholder="algorithm_service:" />
+            <marker date="1438626020000" expanded="true" signature="-1:-1" placeholder="arguments:" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="12" selection-start="2376" selection-end="2420" vertical-scroll-proportion="-4.576923" vertical-offset="1054" max-vertical-offset="2278">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="62" selection-start="1417" selection-end="1417" vertical-scroll-proportion="-21.961538" vertical-offset="347" max-vertical-offset="1207">
+        <state line="54" column="62" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1207">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="535" selection-end="535" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="595">
-          <folding>
-            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#4;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#5;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#6;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#5;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#6;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="37" selection-start="583" selection-end="583" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="1870">
-          <folding>
-            <element signature="e#1333#1337#0" expanded="false" />
-            <element signature="e#1619#1623#0" expanded="false" />
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="e#4890#4927#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="20" selection-start="2882" selection-end="2882" vertical-scroll-proportion="-5.8461537" vertical-offset="1514" max-vertical-offset="2312">
+        <state line="98" column="20" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.0" vertical-offset="1514" max-vertical-offset="2312">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/algorithm-stats/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="261" selection-start="3906" selection-end="3906" vertical-scroll-proportion="-11.038462" vertical-offset="1090" max-vertical-offset="1717">
-          <folding>
-            <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="746" column="20" selection-start="22830" selection-end="22830" vertical-scroll-proportion="-6.1923075" vertical-offset="12402" max-vertical-offset="33796">
+        <state line="746" column="20" selection-start="22830" selection-end="22830" vertical-scroll-proportion="0.0" vertical-offset="12682" max-vertical-offset="33915">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="35" selection-start="816" selection-end="816" vertical-scroll-proportion="-6.019231" vertical-offset="214" max-vertical-offset="1513">
-          <folding>
-            <element signature="e#6#86#0" expanded="true" />
-            <element signature="e#1537#1555#1" expanded="true" />
-            <element signature="e#1692#1710#1" expanded="true" />
-          </folding>
+        <state line="31" column="35" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0" vertical-offset="214" max-vertical-offset="1513">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="10" selection-start="598" selection-end="598" vertical-scroll-proportion="-4.3846154" vertical-offset="146" max-vertical-offset="1530">
-          <folding>
-            <element signature="e#122#181#0" expanded="true" />
-            <element signature="e#746#779#0" expanded="true" />
-            <element signature="e#2981#3034#0" expanded="true" />
-          </folding>
+        <state line="11" column="51" selection-start="503" selection-end="503" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="646">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/seasonsSelect.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="-12.096154" vertical-offset="0" max-vertical-offset="2414">
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state line="3" column="10" selection-start="156" selection-end="156" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,12 +918,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/algorithm-stats/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="32" selection-start="989" selection-end="989" vertical-scroll-proportion="0.65106386" vertical-offset="51" max-vertical-offset="646">
+        <state line="81" column="261" selection-start="3906" selection-end="3906" vertical-scroll-proportion="-14.423077" vertical-offset="1002" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="-9.153846" vertical-offset="391" max-vertical-offset="2414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="17" selection-start="1974" selection-end="1982" vertical-scroll-proportion="-7.019231" vertical-offset="604" max-vertical-offset="2278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsTable.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="27" selection-start="1352" selection-end="1352" vertical-scroll-proportion="-21.576923" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="-19.5" vertical-offset="207" max-vertical-offset="2516">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="32" selection-start="1118" selection-end="1118" vertical-scroll-proportion="14.538462" vertical-offset="1181" max-vertical-offset="1870">
           <folding>
-            <element signature="e#910#918#0" expanded="true" />
-            <element signature="e#1006#1027#0" expanded="true" />
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="e#4991#5028#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="34" selection-start="2176" selection-end="2176" vertical-scroll-proportion="-3.7692308" vertical-offset="841" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="467" selection-end="467" vertical-scroll-proportion="0.38163266" vertical-offset="0" max-vertical-offset="629">
+          <folding>
+            <element signature="e#1194#1230#0" expanded="true" />
           </folding>
         </state>
       </provider>
