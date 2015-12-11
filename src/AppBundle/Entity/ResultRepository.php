@@ -36,7 +36,7 @@ class ResultRepository extends EntityRepository
             ->andWhere('r.matchDate > :from_date')
             ->andWhere('r.matchDate < :to_date')
             ->setParameter('league_code', $league_code)
-            ->setParameter('from_date', date("Y-m-d"))
+            ->setParameter('from_date', date("Y-m-d",strtotime("-1 day")))
             ->setParameter('to_date', date("Y-m-d",strtotime("+4 week")))
             ->orderBy('r.league_code', 'DESC')
             ->addOrderBy('r.matchDate', 'ASC')

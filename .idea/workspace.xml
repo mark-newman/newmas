@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8656e7ef-f15b-4451-81fb-6ff4e529567e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php" afterPath="$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="newmas.iws" />
@@ -29,7 +31,7 @@
       <file leaf-file-name="AlgorithmStatsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="29" selection-start="3167" selection-end="3167" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="1700">
+            <state line="88" column="0" selection-start="3405" selection-end="3405" vertical-scroll-proportion="-9.0" vertical-offset="1126" max-vertical-offset="1564">
               <folding />
             </state>
           </provider>
@@ -44,22 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="746" column="20" selection-start="22830" selection-end="22830" vertical-scroll-proportion="0.0" vertical-offset="12682" max-vertical-offset="33915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="algorithmResults.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="12" selection-start="467" selection-end="467" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="629">
-              <folding>
-                <element signature="e#1194#1230#0" expanded="false" />
-              </folding>
+            <state line="11" column="12" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlgorithmService.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AlgorithmService.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="32" selection-start="619" selection-end="619" vertical-scroll-proportion="-1.1968191" vertical-offset="925" max-vertical-offset="1428">
+            <state line="83" column="2" selection-start="2786" selection-end="2786" vertical-scroll-proportion="-43.153847" vertical-offset="204" max-vertical-offset="1428">
               <folding />
             </state>
           </provider>
@@ -103,7 +94,34 @@
       <file leaf-file-name="resultsTable.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsTable.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="27" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="748">
+            <state line="16" column="16" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="748">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImportController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="40" selection-start="403" selection-end="428" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="5967">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="9" selection-start="215" selection-end="215" vertical-scroll-proportion="0.35416666" vertical-offset="0" max-vertical-offset="624">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CsvReader.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/ddeboer/data-import/src/Ddeboer/DataImport/Reader/CsvReader.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="188" column="20" selection-start="5186" selection-end="5186" vertical-scroll-proportion="123.96154" vertical-offset="6419" max-vertical-offset="7276">
               <folding />
             </state>
           </provider>
@@ -112,7 +130,7 @@
       <file leaf-file-name="MatchController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="79" selection-start="977" selection-end="1057" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="2329">
+            <state line="35" column="83" selection-start="1042" selection-end="1061" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="2329">
               <folding />
             </state>
           </provider>
@@ -121,7 +139,7 @@
       <file leaf-file-name="ResultRepository.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="20" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2312">
+            <state line="38" column="74" selection-start="1116" selection-end="1116" vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="2312">
               <folding />
             </state>
           </provider>
@@ -130,25 +148,7 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2414">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/public/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="20" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="51" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="646">
+            <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2414">
               <folding />
             </state>
           </provider>
@@ -199,9 +199,7 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/TeamRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/partials/matchdaySelect.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/partials/resultsTable.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/TestAlgorithmController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/algorithmService.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
@@ -211,10 +209,13 @@
         <option value="$PROJECT_DIR$/app/Resources/public/main.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -279,7 +280,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,76 +297,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Twig" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AppBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -378,180 +309,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="match" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="match" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm-stats" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithm-stats" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newmas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -628,25 +385,26 @@
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27109975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1342711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31473532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3040057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -666,11 +424,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="55" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="323" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="21" selection-start="333" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1496" />
@@ -726,11 +479,6 @@
         <state line="432" column="53" selection-start="15932" selection-end="15938" vertical-scroll-proportion="6.498952" vertical-offset="4244" max-vertical-offset="10948" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ddeboer/data-import/src/Ddeboer/DataImport/Reader/CsvReader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="20" selection-start="5186" selection-end="5186" vertical-scroll-proportion="0.0" vertical-offset="3196" max-vertical-offset="7276" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="496" />
@@ -754,11 +502,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Finder/SplFileInfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="33" selection-start="419" selection-end="419" vertical-scroll-proportion="-6.3076925" vertical-offset="23" max-vertical-offset="1292" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/SPL_c1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="24" selection-start="7298" selection-end="7298" vertical-scroll-proportion="-6.019231" vertical-offset="3376" max-vertical-offset="38403" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/old-api/matchdayList.html.twig">
@@ -811,11 +554,6 @@
         <state line="295" column="35" selection-start="7866" selection-end="7866" vertical-scroll-proportion="0.0" vertical-offset="4703" max-vertical-offset="22695" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="49" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2125" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/old-api/partials/resultsTable.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="12" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="833" />
@@ -846,37 +584,31 @@
         <state line="54" column="62" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="347" max-vertical-offset="1207" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="20" selection-start="2882" selection-end="2882" vertical-scroll-proportion="0.0" vertical-offset="1514" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="746" column="20" selection-start="22830" selection-end="22830" vertical-scroll-proportion="0.0" vertical-offset="12682" max-vertical-offset="33915">
-          <folding />
-        </state>
+        <state line="746" column="20" selection-start="22830" selection-end="22830" vertical-scroll-proportion="0.0" vertical-offset="12682" max-vertical-offset="33915" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/seasonsSelect.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
-          <folding />
-        </state>
+        <state line="11" column="51" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="646" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/public/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="20" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+        <state line="19" column="20" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="2550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="629">
           <folding />
         </state>
       </provider>
@@ -888,16 +620,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Team.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="2550">
+        <state line="43" column="25" selection-start="2590" selection-end="2590" vertical-scroll-proportion="0.0" vertical-offset="511" max-vertical-offset="1938">
           <folding />
         </state>
       </provider>
@@ -911,44 +636,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsTable.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="27" selection-start="1352" selection-end="1352" vertical-scroll-proportion="0.0" vertical-offset="245" max-vertical-offset="748">
+        <state line="16" column="16" selection-start="399" selection-end="399" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="748">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/SPL_c1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="29" selection-start="3167" selection-end="3167" vertical-scroll-proportion="0.0" vertical-offset="1411" max-vertical-offset="1700">
+        <state line="21" column="41" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="38403">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="79" selection-start="977" selection-end="1057" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="2329">
+        <state line="35" column="83" selection-start="1042" selection-end="1061" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="2329">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="25" selection-start="2590" selection-end="2590" vertical-scroll-proportion="0.0" vertical-offset="511" max-vertical-offset="1938">
+        <state line="37" column="22" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="2414">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/match/partials/seasonsSelect.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="467" selection-end="467" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="629">
-          <folding>
-            <element signature="e#1194#1230#0" expanded="false" />
-          </folding>
+        <state line="3" column="10" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/ddeboer/data-import/src/Ddeboer/DataImport/Reader/CsvReader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="20" selection-start="5186" selection-end="5186" vertical-scroll-proportion="123.96154" vertical-offset="6419" max-vertical-offset="7276">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="619" selection-end="619" vertical-scroll-proportion="-1.1968191" vertical-offset="925" max-vertical-offset="1428">
+        <state line="83" column="2" selection-start="2786" selection-end="2786" vertical-scroll-proportion="-43.153847" vertical-offset="204" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="0" selection-start="3405" selection-end="3405" vertical-scroll-proportion="-9.0" vertical-offset="1126" max-vertical-offset="1564">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="74" selection-start="1116" selection-end="1116" vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="2312">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="40" selection-start="403" selection-end="428" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="5967">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="9" selection-start="215" selection-end="215" vertical-scroll-proportion="0.35416666" vertical-offset="0" max-vertical-offset="624">
           <folding />
         </state>
       </provider>
