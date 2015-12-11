@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8656e7ef-f15b-4451-81fb-6ff4e529567e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="newmas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="9" selection-start="215" selection-end="215" vertical-scroll-proportion="0.35416666" vertical-offset="0" max-vertical-offset="624">
+            <state line="13" column="9" selection-start="215" selection-end="215" vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -136,10 +133,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultRepository.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ResultRepository.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="74" selection-start="1116" selection-end="1116" vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="2312">
+            <state line="42" column="24" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.44863012" vertical-offset="452" max-vertical-offset="2312">
               <folding />
             </state>
           </provider>
@@ -211,11 +208,11 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/MatchController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/algorithm-stats/partials/algorithmResults.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/match/partials/resultsList.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Service/AlgorithmService.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/AlgorithmStatsController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php" />
       </list>
     </option>
   </component>
@@ -690,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="74" selection-start="1116" selection-end="1116" vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="2312">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImportController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="40" selection-start="403" selection-end="428" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="5967">
@@ -706,7 +696,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="9" selection-start="215" selection-end="215" vertical-scroll-proportion="0.35416666" vertical-offset="0" max-vertical-offset="624">
+        <state line="13" column="9" selection-start="215" selection-end="215" vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ResultRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="24" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.44863012" vertical-offset="452" max-vertical-offset="2312">
           <folding />
         </state>
       </provider>
