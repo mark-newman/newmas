@@ -236,6 +236,8 @@ class ImportController extends Controller
         ini_set ('max_execution_time', 60000);
         $em = $this->getDoctrine()->getManager();
 
+        $dates_updated = array();
+
         $league_codes = array(
             'E0', 'E1', 'E2', 'E3'
         );
@@ -294,10 +296,12 @@ class ImportController extends Controller
                     }
                 }
 
+                $dates_updated[$date->format('d/m/Y')] = true;
+
                 if(array_key_exists($date->format('d/m/Y'), $all_existing_results) && array_key_exists($hometeam->getId(), $all_existing_results[$date->format('d/m/Y')]) && array_key_exists($awayteam->getId(), $all_existing_results[$date->format('d/m/Y')][$hometeam->getId()])){
 
                     $match = $all_existing_results[$date->format('d/m/Y')][$hometeam->getId()][$awayteam->getId()];
-                    if(is_null($match->getHomeScore())){
+                    if(is_null($match->getHomeScore()) && !is_null($row['FTAG']) && ($row['FTAG'] != '')){
 
                         $match->setAwayScore($row['FTAG']);
                         $match->setHomeScore($row['FTHG']);
@@ -313,8 +317,33 @@ class ImportController extends Controller
             $em->flush();
             flush(); sleep(5);
         }
+
+        $results_not_updated = $em->getRepository('AppBundle:Result')->findBy(array('homeScore' => null));
+
+        foreach($results_not_updated as $result){
+            if(in_array($result->getMatchDate()->format('d/m/Y'), array_keys($dates_updated))){
+                echo $result->getHometeam()->getName(). " v ".$result->getAwayteam()->getName()." was not updated.<br />";
+                flush(); sleep(5);
+            }
+        }
+
         return "Results updated: $result_count<br />";
 
+    }
+
+    /**
+     * @Route("/import/results/delete-postponed")
+     */
+    public function deletePostponedGames(){
+        $this->importResultsAction();
+        $em = $this->getDoctrine()->getManager();
+        $results = $em->getRepository('AppBundle:Result')->findBy(array('homeScore' => null));
+        $total_removed = count($results);
+        foreach($results as $result){
+            $em->remove($result);
+        }
+        $em->flush();
+        die(print_r($total_removed." results removed.", true));
     }
 
     private function downloadFixturesFile(){
