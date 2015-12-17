@@ -321,10 +321,10 @@ class ImportController extends Controller
         $results_not_updated = $em->getRepository('AppBundle:Result')->findBy(array('homeScore' => null));
 
         foreach($results_not_updated as $result){
-            if(in_array($result->getMatchDate()->format('d/m/Y'), array_keys($dates_updated))){
-                echo $result->getHometeam()->getName(). " v ".$result->getAwayteam()->getName()." was not updated.<br />";
-                flush(); sleep(5);
-            }
+//            if(in_array($result->getMatchDate()->format('d/m/Y'), array_keys($dates_updated))){
+            echo $result->getHometeam()->getName(). " v ".$result->getAwayteam()->getName()." was not updated.<br />";
+            flush(); sleep(5);
+//            }
         }
 
         return "Results updated: $result_count<br />";
@@ -335,7 +335,7 @@ class ImportController extends Controller
      * @Route("/import/results/delete-postponed")
      */
     public function deletePostponedGames(){
-        $this->importResultsAction();
+//        $this->importResultsAction();
         $em = $this->getDoctrine()->getManager();
         $results = $em->getRepository('AppBundle:Result')->findBy(array('homeScore' => null));
         $total_removed = count($results);
