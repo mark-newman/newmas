@@ -29,7 +29,7 @@ class ImportController extends Controller
      */
     public function importCSVsAction()
     {
-        ini_set('memory_limit', '-1');
+        ini_set('memory_limit', '256M');
         ini_set ('max_execution_time', 60000);
         $finder = new Finder();
         $finder->files()->in(__DIR__.'/../../../app/Resources/csv_data/15_16')->name('*.csv');
@@ -150,7 +150,7 @@ class ImportController extends Controller
      */
     public function importFixturesAction()
     {
-        ini_set('memory_limit', '-1');
+        ini_set('memory_limit', '256M');
         ini_set ('max_execution_time', 60000);
         $em = $this->getDoctrine()->getManager();
 
@@ -192,8 +192,8 @@ class ImportController extends Controller
                     $hometeam = $row['HT'];
                     $awayteam = $row['AT'];
                 }
-                $hometeam = $teams_array[$hometeam];
-                $awayteam = $teams_array[$awayteam];
+                $hometeam = $teams_array[trim($hometeam)];
+                $awayteam = $teams_array[trim($awayteam)];
                 $date1 = new \DateTime();
                 $date = $date1->createFromFormat('d/m/y', $row['Date']);
                 if(!is_object($date)){
@@ -232,7 +232,7 @@ class ImportController extends Controller
      */
     public function importResultsAction()
     {
-        ini_set('memory_limit', '-1');
+        ini_set('memory_limit', '256M');
         ini_set ('max_execution_time', 60000);
         $em = $this->getDoctrine()->getManager();
 
