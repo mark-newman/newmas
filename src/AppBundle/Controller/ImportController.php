@@ -29,7 +29,7 @@ class ImportController extends Controller
      */
     public function importCSVsAction()
     {
-        ini_set('memory_limit', '256M');
+        ini_set('memory_limit', '512M');
         ini_set ('max_execution_time', 600);
         $finder = new Finder();
         $finder->files()->in(__DIR__.'/../../../app/Resources/csv_data/15_16')->name('*.csv');
@@ -150,7 +150,7 @@ class ImportController extends Controller
      */
     public function importFixturesAction()
     {
-        ini_set('memory_limit', '256M');
+        ini_set('memory_limit', '512M');
         ini_set ('max_execution_time', 600);
         $em = $this->getDoctrine()->getManager();
 
@@ -232,7 +232,7 @@ class ImportController extends Controller
      */
     public function importResultsAction()
     {
-        ini_set('memory_limit', '256M');
+        ini_set('memory_limit', '512M');
         ini_set ('max_execution_time', 600);
         $em = $this->getDoctrine()->getManager();
 
